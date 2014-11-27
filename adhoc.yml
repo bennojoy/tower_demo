@@ -5,3 +5,6 @@
   tasks:
    - name: Run a adhoc command
      shell: "{{ cmd }}"
+     register: foo
+  
+   - debug: var=foo.stdou_lines
