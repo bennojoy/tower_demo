@@ -7,4 +7,4 @@
      shell: "{{ cmd }}"
      register: foo
   
-   - debug: var=foo.stdou_lines
+   - debug: var=foo.stdout_lines
