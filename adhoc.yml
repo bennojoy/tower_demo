@@ -1,0 +1,6 @@
+- hosts: all
+  vars:
+    cmd: hostname
+  tasks:
+   - name: Run a adhoc command
+     shell: "{{ cmd }}"

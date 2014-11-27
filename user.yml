@@ -1,0 +1,7 @@
+- hosts: all
+  sudo: true
+  tasks:
+   - name: create all users
+     user: name={{ item.name }} password={{ item.password }} group={{ item.group }}
+     with_items: users
+
